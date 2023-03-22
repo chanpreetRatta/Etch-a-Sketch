@@ -1,4 +1,23 @@
-*, *::after, *::before{
-    box-sizing: border-box;
+
+
+body{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    border: 1px solid black;
+    height: 496px;
+    width: 496px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.innerDIV{
+    height: 16px;
+    width: 16px;
 }
 
