@@ -5,19 +5,31 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 50px;
 }
 
 .container{
+    padding: 0;
+    box-sizing: content-box ;
     border: 1px solid black;
     height: 496px;
     width: 496px;
     display: flex;
     flex-wrap: wrap;
+    flex: 2; 
 
 }
 
-.innerDIV{
-    height: 16px;
-    width: 16px;
+
+.innerDiv{
+    width: 24px;
+    height: 24px;
 }
+
+.nav{
+    max-width: fit-content;
+    flex: 1
+}
+
+
 

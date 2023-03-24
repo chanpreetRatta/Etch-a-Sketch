@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
@@ -10,7 +16,33 @@
   <body>
     <div class="nav">
       <form action="" class="controllers">
-        <input name="pixelSize" type="range" min="4" max="32" step="4" />
+        <div class="mb-3">
+          <label for="pixels" class="form-label">Pixel Size</label>
+          <input
+            class="form-control"
+            id="pixels"
+            name="pixels"
+            type="number"
+            max="24"
+            min="4"
+            step="4"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="containerSize" class="form-label"
+            >Container Size(Height x Width)</label
+          >
+          <input
+            class="form-control"
+            id="containerSize"
+            name="containerSize"
+            type="number"
+            max="496"
+            min="96"
+            step="4"
+          />
+        </div>
+        <button class="btn btn-primary" type="submit">Enter</button>
       </form>
     </div>
     <div class="container"></div>
